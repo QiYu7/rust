@@ -1,23 +1,23 @@
+use std::collections::HashMap;
+
 #[derive(Debug)]
 pub struct KvStore {
-    key : String,
-    value : String,
+    kvs: HashMap<String, String>,
 }
 
 impl KvStore {
-    pub fn new(k: String, v: String) -> KvStore {
+    pub fn new() -> KvStore {
         KvStore{
-            key: k, 
-            value: v,
+            kvs: HashMap::new(),
         }
     }
-    pub fn set(&self, k: String, v: String){
-        panic!("set!");
+    pub fn set(&mut self, k: &str, v: &str){
+        self.kvs.insert(k.to_owned(), v.to_owned());
     }
-    pub fn get(&self, k: String) -> Option<String> {
-        panic!("get!");
+    pub fn get(&self, k: &str) -> Option<&String> {
+        self.kvs.get(k)
     }
-    pub fn remove(&self, k: String) {
-        panic!("rm!");
+    pub fn rv(&mut self, k: &str) {
+        self.kvs.remove(k);
     }
 }
