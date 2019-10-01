@@ -1,0 +1,11 @@
+var ALIASES = {};
+ALIASES["atty"] = {};
+ALIASES["bitflags"] = {};
+ALIASES["clap"] = {};
+ALIASES["kvs"] = {};
+ALIASES["strsim"] = {};
+ALIASES["textwrap"] = {};
+ALIASES["unicode_width"] = {};
+ALIASES["vec_map"] = {};
+ALIASES["winapi"] = {};
+ALIASES["yaml_rust"] = {};

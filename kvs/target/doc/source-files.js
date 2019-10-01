@@ -1,0 +1,12 @@
+var N = null;var sourcesIndex = {};
+sourcesIndex["atty"] = {"name":"","files":["lib.rs"]};
+sourcesIndex["bitflags"] = {"name":"","files":["lib.rs"]};
+sourcesIndex["clap"] = {"name":"","dirs":[{"name":"app","files":["help.rs","meta.rs","mod.rs","parser.rs","settings.rs","usage.rs","validator.rs"]},{"name":"args","dirs":[{"name":"arg_builder","files":["base.rs","flag.rs","mod.rs","option.rs","positional.rs","switched.rs","valued.rs"]}],"files":["any_arg.rs","arg.rs","arg_matcher.rs","arg_matches.rs","group.rs","macros.rs","matched_arg.rs","mod.rs","settings.rs","subcommand.rs"]},{"name":"completions","files":["bash.rs","elvish.rs","fish.rs","macros.rs","mod.rs","powershell.rs","shell.rs","zsh.rs"]}],"files":["errors.rs","fmt.rs","lib.rs","macros.rs","map.rs","osstringext.rs","strext.rs","suggestions.rs","usage_parser.rs"]};
+sourcesIndex["kvs"] = {"name":"","files":["lib.rs"]};
+sourcesIndex["strsim"] = {"name":"","files":["lib.rs"]};
+sourcesIndex["textwrap"] = {"name":"","files":["indentation.rs","lib.rs","splitting.rs"]};
+sourcesIndex["unicode_width"] = {"name":"","files":["lib.rs","tables.rs"]};
+sourcesIndex["vec_map"] = {"name":"","files":["lib.rs"]};
+sourcesIndex["winapi"] = {"name":"","dirs":[{"name":"km","files":["mod.rs"]},{"name":"shared","files":["basetsd.rs","cfg.rs","devpropdef.rs","guiddef.rs","ktmtypes.rs","minwindef.rs","mod.rs","ntdef.rs","ntstatus.rs","windef.rs"]},{"name":"um","dirs":[{"name":"gl","files":["mod.rs"]}],"files":["cfgmgr32.rs","consoleapi.rs","errhandlingapi.rs","fileapi.rs","libloaderapi.rs","minwinbase.rs","mod.rs","processenv.rs","processthreadsapi.rs","winbase.rs","wincon.rs","wincontypes.rs","wingdi.rs","winnt.rs","winreg.rs"]},{"name":"vc","files":["excpt.rs","mod.rs","vadefs.rs","vcruntime.rs"]},{"name":"winrt","files":["mod.rs"]}],"files":["lib.rs","macros.rs"]};
+sourcesIndex["yaml_rust"] = {"name":"","files":["emitter.rs","lib.rs","parser.rs","scanner.rs","yaml.rs"]};
+createSourceSidebar();

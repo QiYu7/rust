@@ -7,11 +7,11 @@ pub struct KvStore {
 
 impl KvStore {
     pub fn new() -> KvStore {
-        KvStore{
+        KvStore {
             kvs: HashMap::new(),
         }
     }
-    pub fn set(&mut self, k: String, v: String){
+    pub fn set(&mut self, k: String, v: String) {
         self.kvs.insert(k, v);
     }
     pub fn get(&self, k: String) -> Option<String> {
