@@ -1,16 +1,17 @@
 extern crate clap;
 
+use std::process::exit;
 use clap::{Arg, App, SubCommand};
 use kvs::KvStore;
 
 fn main() {
     
-    let mut test = KvStore::new();
+    //let mut test = KvStore::new();
 
     let matches = App::new("kvs")
         .about("a key-value store tool")
         .author("QiYu7")
-        .version("CARGO_PKG_VERSION")
+        .version("0.1.0")
         .subcommand(SubCommand::with_name("set")
             .about("Set the value of a string key to a string")
             .arg(
@@ -21,9 +22,19 @@ fn main() {
                 Arg::with_name("VALUE")
                     .required(true)
             ))
-        .get_matches_from(vec![
-            "kvs", "set", "213", "333"
-        ]);
+        .subcommand(SubCommand::with_name("get")
+            .about("Get the string value of a given string key")
+            .arg(
+                Arg::with_name("KEY")
+                    .required(true)
+            ))
+        .subcommand(SubCommand::with_name("rm")
+            .about("Remove a given key")
+            .arg(
+                Arg::with_name("KEY")
+                    .required(true)
+            ))
+        .get_matches();
         
         /*
         if let Some(sub_m) = matches.subcommand_matches("set") {
@@ -35,7 +46,25 @@ fn main() {
         }
         */
 
-        println!("{:?}", test);
+        //println!("{:?}", test);
+        match matches.subcommand(){
+            ("set", Some(sub_m)) => {
+                eprintln!("unimplemented");
+                exit(1);
+            },
+            ("get", Some(sub_m)) => {
+                eprintln!("unimplemented");
+                exit(1);
+            },
+            ("rm", Some(sub_m)) => {
+                eprintln!("unimplemented");
+                exit(1);
+            },
+            _ => {
+                exit(1);
+            },
+        }
+
 
 
 }
